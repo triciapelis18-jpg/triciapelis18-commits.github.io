@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e1b4b,#312e81);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#8b5cf6;
+    border-radius:20px;
+}
+
+/* Navigation */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,.05);
+    z-index:999;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#a78bfa;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#c084fc;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px;
+}
+
+.hero h1{
+    font-size:70px;
+}
+
+.hero span{
+    color:#c084fc;
+}
+
+.hero p{
+    margin:20px auto;
+    max-width:700px;
+    color:#d1d5db;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 35px;
+    border-radius:40px;
+    background:linear-gradient(90deg,#8b5cf6,#ec4899);
+    color:white;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 30px rgba(236,72,153,.3);
+}
+
+/* Sections */
+
+section{
+    padding:100px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:60px;
+}
+
+/* Glass Card */
+
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:25px;
+    padding:35px;
+}
+
+/* About */
+
+.about{
+    max-width:900px;
+    margin:auto;
+}
+
+/* Skills */
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.skill{
+    text-align:center;
+    transition:.4s;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+}
+
+.skill h3{
+    margin-top:15px;
+}
+
+/* Projects */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project{
+    transition:.4s;
+}
+
+.project:hover{
+    transform:translateY(-10px) scale(1.02);
+}
+
+.project img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#ccc;
+}
+
+/* Floating circles */
+
+.circle{
+    position:fixed;
+    border-radius:50%;
+    filter:blur(90px);
+    z-index:-1;
+}
+
+.c1{
+    width:300px;
+    height:300px;
+    background:#8b5cf6;
+    top:-100px;
+    left:-100px;
+}
+
+.c2{
+    width:350px;
+    height:350px;
+    background:#ec4899;
+    right:-120px;
+    bottom:-100px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:45px;
+}
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+
+<nav>
+
+<div class="logo">Portfolio.</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h1>Hello, I'm <span> ITS TAMPOLIN A.K.A SHASHA</span></h1>
+
+<p>
+Creative Developer • UI Designer • Problem Solver
+
+I love designing beautiful websites and creating amazing digital experiences.
+</p>
+
+<a href="#projects" class="btn">View My Work</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Me</h2>
+
+<div class="card about">
+
+<p>
+
+Hi! I'm <b> ITS TAMPOLIN A.K.A SHASHA</b>, a passionate web developer who enjoys building modern,
+responsive, and interactive websites.
+
+I enjoy learning new technologies, solving problems, and turning ideas into
+beautiful user experiences.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="card skill">
+<h3>HTML5</h3>
+</div>
+
+<div class="card skill">
+<h3>CSS3</h3>
+</div>
+
+<div class="card skill">
+<h3>JavaScript</h3>
+</div>
+
+<div class="card skill">
+<h3>React</h3>
+</div>
+
+<div class="card skill">
+<h3>Python</h3>
+</div>
+
+<div class="card skill">
+<h3>UI / UX</h3>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2 class="title">Featured Projects</h2>
+
+<div class="projects">
+
+<div class="card project">
+
+<img src="https://picsum.photos/500/300?1">
+
+<h3>Portfolio Website</h3>
+
+<p>
+Modern responsive portfolio website with smooth animations.
+</p>
+
+</div>
+
+<div class="card project">
+
+<img src="https://picsum.photos/500/300?2">
+
+<h3>Weather App</h3>
+
+<p>
+Weather application using OpenWeather API.
+</p>
+
+</div>
+
+<div class="card project">
+
+<img src="https://picsum.photos/500/300?3">
+
+<h3>Task Manager</h3>
+
+<p>
+Beautiful productivity application with local storage.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title"< ITS TAMPOLIN A.K.A SHASHA</h2>
+
+<div class="card contact"> 
+
+<p>Email</p>
+<h3>your@email.com</h3>
+
+<br>
+
+<p>GitHub</p>
+<h3>github.com/ ITS TAMPOLIN A.K.A SHASHA</h3>
+
+<br>
+
+<a href="#" class="btn">Download Resume</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Your Name • Designed with ❤️
+
+</footer>
+
+</body>
+</html>
