@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Discipline | Tricia O. Pel-is</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Quicksand',sans-serif;
+background:url("Bg Pel.jpg") center center fixed;
+background-size:cover;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.72);
+backdrop-filter:blur(3px);
+z-index:-1;
+}
+
+.container{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+}
+
+.card{
+width:900px;
+max-width:95%;
+background:rgba(20,20,20,.82);
+border:2px solid #ff80bf;
+border-radius:25px;
+padding:45px;
+backdrop-filter:blur(12px);
+box-shadow:0 0 35px rgba(255,105,180,.35);
+animation:fadeUp 1s ease;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 45px rgba(255,105,180,.55);
+}
+
+h1{
+font-family:'Pacifico',cursive;
+text-align:center;
+font-size:48px;
+color:#ff9dcc;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#ffd8eb;
+margin-bottom:35px;
+font-size:18px;
+}
+
+.content{
+font-size:19px;
+line-height:2;
+text-align:justify;
+background:rgba(255,255,255,.05);
+padding:30px;
+border-left:5px solid #ff99cc;
+border-radius:18px;
+}
+
+.button-area{
+margin-top:40px;
+text-align:center;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:#ff8fc5;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.35s;
+}
+
+.button:hover{
+background:#ff69b4;
+transform:translateY(-4px);
+box-shadow:0 0 20px hotpink;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(50px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@media(max-width:700px){
+
+h1{
+font-size:35px;
+}
+
+.content{
+font-size:17px;
+padding:20px;
+}
+
+.card{
+padding:25px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Discipline</h1>
+
+<p class="subtitle">
+Integrity, Responsibility, and Professionalism
+</p>
+
+<div class="content">
+
+I believe that discipline is the foundation of success, responsibility, and good character. I always strive to follow rules and regulations, complete my responsibilities on time, and remain committed to doing what is right even when no one is watching.
+
+<br><br>
+
+Being punctual is one of my personal values because it shows respect for other people's time and demonstrates that I can be trusted with important responsibilities. I make it a habit to prepare early, stay organized, and give my best effort in everything I do.
+
+<br><br>
+
+Honesty is another principle that guides my everyday life. I believe that trust can only be earned through truthfulness, fairness, and integrity. Whether I am working individually or with a team, I always aim to act ethically and take responsibility for my actions.
+
+<br><br>
+
+As a Bachelor of Science in Criminology student, I understand that discipline, punctuality, and honesty are essential qualities of a future law enforcer. These values will help me uphold justice, earn the trust of the public, and serve my community with professionalism, dedication, and honor.
+
+</div>
+
+<div class="button-area">
+
+<a href="index.html" class="button">
+⬅ Back to Home
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
