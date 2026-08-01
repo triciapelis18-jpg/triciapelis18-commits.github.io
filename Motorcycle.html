@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Motorcycle Riding | Tricia O. Pel-is</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Quicksand',sans-serif;
+background:url("Bg Pel.jpg") center center fixed;
+background-size:cover;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.72);
+backdrop-filter:blur(3px);
+z-index:-1;
+}
+
+.container{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:40px 20px;
+}
+
+.card{
+width:900px;
+max-width:95%;
+background:rgba(20,20,20,.82);
+border:2px solid #ff80bf;
+border-radius:25px;
+padding:45px;
+backdrop-filter:blur(12px);
+box-shadow:0 0 35px rgba(255,105,180,.35);
+animation:fadeUp 1s ease;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 45px rgba(255,105,180,.55);
+}
+
+h1{
+font-family:'Pacifico',cursive;
+text-align:center;
+font-size:48px;
+color:#ff9dcc;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#ffd8eb;
+margin-bottom:35px;
+font-size:18px;
+}
+
+.content{
+font-size:19px;
+line-height:2;
+text-align:justify;
+background:rgba(255,255,255,.05);
+padding:30px;
+border-left:5px solid #ff99cc;
+border-radius:18px;
+}
+
+
+.content-row{
+display:flex;
+align-items:center;
+gap:35px;
+}
+.text{
+flex:2;
+font-size:19px;
+line-height:2;
+text-align:justify;
+background:rgba(255,255,255,.05);
+padding:30px;
+border-left:5px solid #ff99cc;
+border-radius:18px;
+}
+.photo{flex:1;text-align:center;}
+.photo img{width:100%;max-width:320px;border-radius:20px;border:3px solid #ff99cc;box-shadow:0 0 25px hotpink;transition:.4s;}
+.photo img:hover{transform:scale(1.05);box-shadow:0 0 40px hotpink;}
+
+.button-area{
+margin-top:40px;
+text-align:center;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:#ff8fc5;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.35s;
+}
+
+.button:hover{
+background:#ff69b4;
+transform:translateY(-4px);
+box-shadow:0 0 20px hotpink;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:700px){
+
+h1{
+font-size:35px;
+}
+
+.content{
+font-size:17px;
+padding:20px;
+}
+
+.card{
+padding:25px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<h1>Motorcycle Riding</h1>
+
+<p class="subtitle">
+Freedom, Peace, and Passion
+</p>
+
+<div class="content-row">
+
+    <div class="text">
+
+        <p>
+        Riding a motorcycle is not just a hobby for me—it is one of my greatest passions and something that holds a very special place in my heart.
+        </p>
+
+        <br>
+
+        <p>
+        Whenever I feel overwhelmed by heavy schoolwork, tiring trainings, or difficult personal problems, I always find comfort in going for a ride. As I travel along the road, with the wind brushing against my face and the beautiful scenery passing by, all my worries and stress slowly fade away.
+        </p>
+
+        <br>
+
+        <p>
+        Riding gives me a wonderful feeling of freedom, as if I can leave all my burdens behind for a while. It is my own way of clearing my mind, calming my emotions, and finding the peace I need to keep moving forward.
+        </p>
+
+        <br>
+
+        <p>
+        No matter how challenging life becomes, this simple activity always lifts my mood, brings a smile to my face, and reminds me that there is still so much beauty to appreciate. More than simply traveling from one place to another, motorcycle riding refreshes my spirit, strengthens my mind, and brings me genuine happiness.
+        </p>
+
+    </div>
+
+    <div class="photo">
+        <img src="Motor.jpg" alt="Motorcycle">
+    </div>
+
+</div>
+
+<div class="button-area">
+
+<a href="index.html" class="button">
+⬅ Back to Home
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
